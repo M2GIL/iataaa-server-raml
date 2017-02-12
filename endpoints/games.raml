@@ -39,6 +39,10 @@ post :
 
 
 /{gameId} :
+  uriParameters:
+    gameId :
+      type : string
+      description: Game id.
   get :
     description : Get game with game id.
     responses :

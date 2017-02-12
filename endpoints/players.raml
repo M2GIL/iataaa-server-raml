@@ -40,7 +40,11 @@ get :
                 difficulty : HARD
             status : OK
 
-/{name} :
+/{playerName} :
+  uriParameters:
+    playerName :
+      type : string
+      description: Player Name.
   get :
     description : Get player with name.
     responses :
@@ -56,6 +60,10 @@ get :
                 difficulty : HARD
               status : OK
 /{playerId} :
+  uriParameters:
+    playerId :
+      type : string
+      description: Player id.
   delete :
     description : Get player with name.
     responses :
